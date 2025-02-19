@@ -1,0 +1,7 @@
+package com.nt.main;
+
+import org.springframework.context.support.FileSystemXmlAplicationContext;
+public class DependencyInjectionTest 
+{
+
+}
