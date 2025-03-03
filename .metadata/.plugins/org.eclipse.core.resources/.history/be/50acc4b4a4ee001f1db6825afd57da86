@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module IOCProj01 {
-	requires spring.context;
-}
