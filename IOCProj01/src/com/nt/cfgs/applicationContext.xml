@@ -10,11 +10,21 @@
 	<bean id="ltime" class="java.time.LocalTime" factory-method="now"/>
 	<!-- Calls LOcalTime.now() method to create LocalTime class object having system time -->
 	
+	
 	<!-- Target Spring bean class cfg -->
-	<bean id="wmg" class="com.nt.sbeans.WishMessageGenerator">
+	<!-- Setter Injection -->
+	 <bean id="wmg" class="com.nt.sbeans.WishMessageGenerator">
 		<property name="time" ref="ltime"/>
 		<!-- setter injection to inject localtime onj(ltime) to property of wishMessageGenrator class obj(wmg) -->
-	</bean>
+	</bean> 
+	
+	<!-- Constructor Injection
+	<bean id="wmg" class="com.nt.sbeans.WishMessageGenerator">
+		<constructor-arg name="time" ref="ltime"/>
+	</bean> -->
+	 
+	
+	
     
 
 </beans>
@@ -70,7 +80,7 @@
 		<!-- 
 		
 				IOC CONTAINER
-			10. IOC Container searches for "ltime" bean id based bean classs
+			10. IOC Container searches for "ltime" bean id based bean class
 				object [that is LocalTime class object] and inject that object 
 				to "time" property of WishMessageGenarator class object [wmg]
 				by calling setter method on it
@@ -89,8 +99,12 @@
 			    Internal cache of the IOC container
 			    - - - - - - - - - - - - - - - - - - -  - - - - - - -
 			    | Bean [Object]   |  Spring bean class object ref   |
-			    | wmg             |  WishMessageGenrator object ref |
-		
+	    [15]    | wmg             |  WishMessageGenrator object ref |
+				| ltime           |  LocalTime class object ref     |
+				| ....            |  ............................   |
+				- - - - - - - - - - - - - - - - -  - - - - - - - - - 
+				  [bean ID's]     | [Spring bean class object ref]  |
+					
 		 -->
 
 <!-- ============================= IOC CONTAINER ======================================== -->
