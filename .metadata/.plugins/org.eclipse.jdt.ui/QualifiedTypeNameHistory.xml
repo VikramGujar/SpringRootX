@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="com.vik.cnfg.AppConfig"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="com.vik.sbeans.WeekDayFinder"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="java.lang.Package"/>
@@ -25,4 +24,14 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.vik.comp.ICourier"/>
+    <fullyQualifiedTypeName name="com.vik.comp.DTDC"/>
+    <fullyQualifiedTypeName name="com.vik.comp.BlueCart"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="com.vik.comp.FlipCart"/>
+    <fullyQualifiedTypeName name="com.vik.factory.FlipCartFactory"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
