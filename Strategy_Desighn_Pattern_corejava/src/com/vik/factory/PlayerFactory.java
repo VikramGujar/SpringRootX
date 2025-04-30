@@ -4,27 +4,34 @@ import com.vik.comp.DeVilliers;
 import com.vik.comp.Doni;
 import com.vik.comp.IPlayer;
 import com.vik.comp.Rohit;
+import com.vik.comp.Scored;
 import com.vik.comp.Virat;
 
 public class PlayerFactory 
 {
-	public static IPlayer getPlayer(String playerName)
+	public static Scored getPlayer(String playerName)
 	{
+		IPlayer player = null;
+		
 		if(playerName.equalsIgnoreCase("virat"))
 		{
-			return new Virat();
+			player = new Virat();
 		}else if(playerName.equalsIgnoreCase("devilliers"))
 		{
-			return new DeVilliers();
+			player = new DeVilliers();
 		}else if(playerName.equalsIgnoreCase("doni"))
 		{
-			return new Doni();
+			player =  new Doni();
 		}else if(playerName.equalsIgnoreCase("rohit"))
 		{
-			return new Rohit();
+			player = new Rohit();
 		}else 
 		{
 			throw new IllegalArgumentException();
 		}
+		
+		Scored scr = new Scored();
+		scr.setPlayer(player);
+		return scr;
 	}
 }
