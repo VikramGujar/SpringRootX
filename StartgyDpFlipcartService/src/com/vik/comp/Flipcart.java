@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class Flipcart 
 {
+	// Rule => Prefer Composition over Inheritance
+	// Implemented by taking ICourier as HAS-A Relation
 	ICourier ic;
 
 	public void setIc(ICourier ic) {

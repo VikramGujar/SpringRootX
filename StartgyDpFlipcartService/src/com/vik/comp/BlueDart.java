@@ -1,6 +1,8 @@
 package com.vik.comp;
 
-public class BlueDart implements ICourier {
+// Rule => code should be close for modification
+// Implemented by taking Final classes 
+public final class BlueDart implements ICourier {
 
 	@Override
 	public String deiliver(int OrderId) 
