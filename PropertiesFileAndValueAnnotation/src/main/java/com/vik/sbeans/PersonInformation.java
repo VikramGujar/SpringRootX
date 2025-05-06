@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component("personInfo")
 public class PersonInformation 
 {
+	// Injecting values from properties file via @Value annotation
 	@Value("${person.id}")
 	private int id;
 	
@@ -17,11 +18,18 @@ public class PersonInformation
 	
 	@Value("${person.age}")
 	private int age;
+	
+	// Inject direct value via @Value annotation 
+	@Value("vikramgujar300@gmail.com")
+	private String email;
 
 	@Override
 	public String toString() {
-		return "PersonInformation [Id=" + id + ", Name=" + name + ", City=" + city + ", Age=" + age + "]";
+		return "PersonInformation [id=" + id + ", name=" + name + ", city=" + city + ", age=" + age + ", email=" + email
+				+ "]";
 	}
+
+	
 	
 	
 	
