@@ -40,6 +40,13 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context-support</artifactId>
+    	<version>6.2.6</version>
+	</dependency>
+    
   </dependencies>
 
   <build>

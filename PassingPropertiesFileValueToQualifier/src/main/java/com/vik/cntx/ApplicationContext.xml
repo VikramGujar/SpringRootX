@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+	
+	<!-- Configure properties file  -->
+	<context:property-placeholder location="com/vik/commons/charging.property"/>
+	<!-- 
+		Note :: If you configure the properties file in java code it will be only 
+				accessible in java code but if you configure it in xml file it will
+				be available in both java code and xml file 
+	 -->
+	 <!-- provide alias name to dependent spring bean id by collecting from properties  -->
+	 <alias name="${ch.device}" alias="device"/>
+	 
+</beans>
